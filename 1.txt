@@ -1,0 +1,12 @@
+1. Escreva uma função que receba dois números inteiros e retorne o menor número.
+
+import 'dart:math';
+
+void main () {
+  
+  List<int> numeros = [10,20];
+  
+  print("O menor número da lista é: ${numeros.reduce(min)}");
+  
+  
+}

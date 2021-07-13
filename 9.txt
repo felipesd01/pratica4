@@ -1,0 +1,29 @@
+9-. Faça um programa que leia dois valores e imprima:
+A) se o primeiro valor for maior que o segundo, a lista
+de valores do primeiro até
+o segundo;
+B) se o primeiro valor for menor que o segundo a lista de
+valores do segundo até
+o primeiro em ordem decrescente;
+C) se ambos forem iguais a mensagem "valores iguais".
+
+import "dart:math";
+
+void main() {
+  
+  double num1 = 10;
+  double num2 = 10;
+  
+  if(num1 > num2){
+    for(double i = num2; i <= num1; i++){
+      print(i);
+    }
+  }else if(num1 < num2){
+    for(double i = num2; i >= num1; i--){
+      print(i);
+    }
+  }else{
+    print("Os valores são iguais!");
+  }
+  
+}
